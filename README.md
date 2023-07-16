@@ -2,7 +2,10 @@
 
 
 ## No-SQL Document Design
-[ ] Add details about sanity check for each entry verification
+
+
+
+Collection name: blisterpacks
 
 ```JSON
 {
@@ -84,11 +87,19 @@
 
 ## TO DO
 
-- [ ] Create a firebase database
-- [ ] Insert some temporay documents in the table
-- [ ] Create and deploy sample API on Fly.io using Github actions
-- [ ] Add GET endpoint to get the single blisterpack entry
+Backend
+=======
+- [x] Create a firebase database
+- [x] Find a way to access firestore database using server
+- [x] Insert some temporay documents in the table
+- [x] Create and deploy sample API on Fly.io using Github actions
+- [x] Add GET endpoint to get the single blisterpack entry
 - [ ] Add PUT endpoint to make updates to the blisterpack entry
+- [x] Add details about sanity check for each entry verification
 
 
-
+Frontend
+========
+- [ ] Create a simple react app and host it on vercel
+- [ ] Create a home page with complete list of blisterpacks that have not been worked upon
+- [ ] Create a GRID for displaying the information

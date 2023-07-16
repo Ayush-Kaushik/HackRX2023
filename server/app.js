@@ -1,6 +1,13 @@
 /** Copyright: Ayush Kaushik */
 const express = require("express");
 const cors = require("cors");
+const db_service = require("./services/db.service");
+const routes = require('./routes');
+
+const injectConnection = (request, response, next) => {
+  request.db = db_service;
+  next();
+}
 
 const handleError = (error, request, response, next) => {
   console.log(error);
@@ -15,6 +22,8 @@ const createApp = () => {
     app.use(cors());
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+    app.use(injectConnection);
+    app.use(routes);
 
     app.use(handleError);
 
