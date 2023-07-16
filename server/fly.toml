@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "phrackers-hackrx-api-2023"
+app = "hack-rx-2023"
 primary_region = "yyz"
 
 [http_service]

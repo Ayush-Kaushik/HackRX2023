@@ -101,3 +101,8 @@ Frontend
 - [ ] Create a simple react app and host it on vercel
 - [ ] Create a home page with complete list of blisterpacks that have not been worked upon
 - [ ] Create a GRID for displaying the information
+
+
+## Research Information
+- Dataset found here: https://open.canada.ca/data/en/dataset/bf55e42a-63cb-4556-bfd8-44f26e5a36fe
+- 

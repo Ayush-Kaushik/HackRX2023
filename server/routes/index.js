@@ -9,15 +9,22 @@ router.get("/blisterpack", async (request, response, next) => {
     const { id } = request.query;
 
     try {
-        const snapshot = await request.db.firestore().collection('blisterpacks').get();
+        
 
         let data;
-        if(id) {
-            data = snapshot.doc(id).get()
+        if (id) {
+            const documentRef = await request.db.firestore().collection('blisterpacks').doc(id);
+            const documentSnapshot = await documentRef.get({ fieldMask: ['*'] });
+            data = documentSnapshot.data();
         } else {
-            data = snapshot.docs.map((doc) => doc.data());
+            const snapshot = await request.db.firestore().collection('blisterpacks').get();
+            data = snapshot.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data()
+            }
+            ));
         }
-        
+
         return response.json(data);
 
     } catch (error) {
@@ -40,7 +47,7 @@ router.post("/blisterpack", async (request, response, next) => {
             .catch((error) => {
                 console.error('Error creating document:', error);
             });
-        
+
         return response.json(data);
 
     } catch (error) {
