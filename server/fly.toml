@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for cool-frog-8691 on 2023-07-15T21:46:19-04:00
+# fly.toml app configuration file generated for hack-rx-2023 on 2023-07-16T02:52:40-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "cool-frog-8691"
+app = "phrackers-hackrx-api-2023"
 primary_region = "yyz"
 
 [http_service]

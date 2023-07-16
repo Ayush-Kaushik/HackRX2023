@@ -83,8 +83,6 @@ Collection name: blisterpacks
 }
 ```
 
-
-
 ## TO DO
 
 Backend
@@ -94,9 +92,9 @@ Backend
 - [x] Insert some temporay documents in the table
 - [x] Create and deploy sample API on Fly.io using Github actions
 - [x] Add GET endpoint to get the single blisterpack entry
+- [ ] Update GET endoint to accept parameters for filtering results
 - [ ] Add PUT endpoint to make updates to the blisterpack entry
 - [x] Add details about sanity check for each entry verification
-
 
 Frontend
 ========
