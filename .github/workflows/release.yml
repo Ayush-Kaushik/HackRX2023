@@ -21,8 +21,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Fly CLI
+        run: curl https://get.fly.io/flyctl.sh -sSfL | sh
+
       - name: Deploy to Fly.io
-        uses: superfly/flyctl-actions/setup-flyctl@master
         run: |
           cd server
           flyctl deploy --remote-onlyc
