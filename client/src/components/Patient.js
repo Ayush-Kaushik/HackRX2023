@@ -69,7 +69,7 @@ function Patient(props) {
 
                         <div className="card-content" key={`card-content-${index} ${blisterpack.drug_identification_number}${blisterpack.brand_name}`}>
                             <b key={`card-brandname-${index} ${blisterpack.drug_identification_number}${blisterpack.brand_name}`}>{blisterpack.brand_name}</b>
-                            <p key={`card-company-name-${index} ${blisterpack.drug_identification_number}${blisterpack.brand_name}`}>{blisterpack.company_name}</p>
+                            <p key={`card-company-name-${index} ${blisterpack.drug_identification_number}${blisterpack.brand_name}`}>{blisterpack.drug_identification_number}</p>
                             <button onClick={() => { handleClick(blisterpack) }}>{"View Layout"}</button>
                         </div>
                     ))}

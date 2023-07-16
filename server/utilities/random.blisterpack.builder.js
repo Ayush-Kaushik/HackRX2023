@@ -43,7 +43,7 @@ const build = () => {
 
 
 const prescriptionBuilder = () => {
-    let index = Math.floor(Math.random() * 22) + 1;
+    let index = Math.floor(Math.random() * 10) + 1;
 
     let prescription = prescriptionTemplate.build();
     let mappedPrescription = Object.assign({}, prescription, medicineData[index]);
