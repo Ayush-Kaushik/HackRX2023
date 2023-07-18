@@ -2,8 +2,7 @@
 
 # SimplyPack Prototype 💊💊 - HackRX2023 Submission
 
-## Description
-`SimplyPack`` aims to make the production of in-store blister packs more efficient for the pharmacy staff and safer for the patients. Our software streamlines the blister packaging process into a few simple steps, ultimately reducing the possibility for error and allowing for a smoother workflow in the pharmacy.
+`SimplyPack` aims to make the production of in-store blister packs more efficient for the pharmacy staff and safer for the patients. Our software streamlines the blister packaging process into a few simple steps, ultimately reducing the possibility for error and allowing for a smoother workflow in the pharmacy.
 
 ## Features
 - Able to view each patient profile awaiting blister-packs 
@@ -14,6 +13,7 @@
 - ```[Not implemented in prototype 🚧]``` Ability to **flag a patient profile** if prescriber has made any changes to the blister-pack 
 - ```[Not implemented in prototype 🚧]``` **Auth mechanisms** to ensure patient data is accessed and updated safely
 - ```[Not implemented in prototype 🚧]``` **Timer feature** - can estimate average time to make a blister-pack
+
 
 ## TechStack
 
